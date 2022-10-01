@@ -1,0 +1,14 @@
+.bg-accent{
+    background-color: var(--color-accent);
+  }
+  .logo-font{
+    font-weight: 700;
+  font-size: 26px;
+  line-height: 169.02%;
+  /* or 44px */
+
+  letter-spacing: 0.57em;
+
+  color: #FFFFFF;
+
+  }
