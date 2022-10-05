@@ -24,13 +24,13 @@ const { title } = Astro.props as Props;
     <div id="content" class="bg-accent ">
     <nav class=" navbar navbar-expand-lg container ">
       <div class="no-padding container-fluid">
-        <img src="/logo.png" alt=""/>
+        <img src="/logo.svg" alt=""/>
 
-        <a class="navbar-brand text-white logo-font text-uppercase text-center" href="#">My star Talks</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" style="filter:invert(1);"></span>
+        <a class="navbar-brand text-white text-sm-screen-center logo-font text-uppercase lh-1" href="#">My <br> star <br> Talks</a>
+        <button class="navbar-toggler" style="border:none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="filter:invert(1);border:none"></span>
         </button>
-        <div class="collapse navbar-collapse d-md-flex justify-content-end text-white" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse d-lg-flex justify-content-end text-white" id="navbarNavAltMarkup">
             <div class="navbar-nav justify-content-end">
             <a class="nav-link " aria-current="page" href="#">Home</a>
             <a class="nav-link ">Blog</a>
@@ -65,6 +65,9 @@ const { title } = Astro.props as Props;
   .navbar-brand{
     margin-left: .5rem;
   }
+  .logo-font{
+
+  }
   .nav-link{
     color:white!important
   }
@@ -81,6 +84,15 @@ const { title } = Astro.props as Props;
     margin: 0;
     font-family: Inter,sans-serif;
       
+  }
+  @media only screen and (max-width: 576px){
+  .text-sm-screen-center{
+    text-align: center;
+  }
+  
+}
+  ::-webkit-scrollbar-track{
+    width:0px;
   }
   header{
     background-color: var(--color-bg)!important;

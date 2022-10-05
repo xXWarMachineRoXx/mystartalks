@@ -4,18 +4,18 @@ import '../style/index.css'
 ---
 <main>
     <div class="container   py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class=" col-sm-12 col-lg-5">
-                <img src="src/images/planet 1.png" class="d-block mx-lg-auto h-100 w-100" alt=""  loading="lazy">
+        <div class="row flex-lg-row-reverse align-items-center  py-5">
+          <div class=" col-sm-12 col-lg-5">
+              <img src="src/images/planet 1.png" class="d-block mx-lg-auto h-100 w-100" alt="decoration"  loading="lazy">
+          </div>
+          <div class="col-lg-7 col-sm-12">
+            <h1 class=" fw-bold lh-1  text-sm-screen-center letter-wide text-uppercase mt-sm-screen-5">Dive into <span class="font-wide" style="font-family: 'Inter';font-style: normal;line-height: 70px;letter-spacing: 0.265em;color: #AED9FB;">Astrology</span> </h1>
+            <div class="subtitle spacing text-sm-screen-center ">Get insights into your future</div> 
+              <img class="line" src="src/images/line.png" alt="">
+            <p class="lead spacing text-sm-screen-center">With the help of trusted and reknowned indian technologies combined with modern AI,  throughout your life , even in your deepest lows and highest highs. My Stars Talk is a platform for everyone from all walks of life to give their lives a path to follow.</p>
+            <div class="d-grid   justify-content-md-start">
+                <button type="button" class="btn  button-gradient btn-lg  ">Get Started</button>
             </div>
-        <div class="col-lg-7">
-        <h1 class=" fw-bold lh-1  letter letter-wide text-uppercase ">Dive into <span style="font-family: 'Inter';font-style: normal;font-size: 60px;line-height: 70px;letter-spacing: 0.265em;color: #AED9FB;">Astrology</span> </h1>
-        <div class="subtitle spacing">Get insights into your future</div> 
-        <img src="src/images/line.png" alt="">
-        <p class="lead spacing">With the help of trusted and reknowned indian technologies combined with modern AI,  throughout your life , even in your deepest lows and highest highs. My Stars Talk is a platform for everyone from all walks of life to give their lives a path to follow.</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn  button-gradient btn-lg  me-md-2">Get Started</button>
-        </div>
         </div>
     </div>
   </div>
@@ -31,19 +31,22 @@ import '../style/index.css'
     font-family: 'Inter';
     font-weight: 300;
   }
+
   .letter-wide{
     font-style: normal;
     font-weight: 700;
     font-size: 44px;
     line-height: 51px;
-    letter-spacing: 0.79em;
+    letter-spacing: 0.5em;
 
     color: #FFFFFF;
   }
+  
   .spacing{
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
+ 
   .subtitle{
     font-family: 'Inter';
     font-style: normal;
@@ -59,4 +62,18 @@ import '../style/index.css'
     border-radius: 30px!important;
     color: black;
   }
+  @media only screen and (max-width: 576px){
+    .font-wide{
+      font-size: 50px;
+    }
+    .line{
+    display:inline-flex; justify-content:center; width:100%;padding-left: 2%;padding-right: 2%;
+  }
+  .text-sm-screen-center{
+    text-align: center;
+  }
+  .mt-sm-screen-5{
+    margin-top: 3rem;
+  }
+}
 </style>
